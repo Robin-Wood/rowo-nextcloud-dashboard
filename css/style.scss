@@ -1,0 +1,135 @@
+$fontColor: #4a4a4a;
+$primary: #08aac7;
+$secondary: #cccccc;
+$canvasWidth: 1024px;
+
+@font-face {
+  font-family: 'Plakkaat';
+  src: url('../fonts/Hanoded-Plakkaat.woff') format('woff')
+}
+
+span.fontpreload {
+  font-family: 'Plakkaat';
+}
+
+.app-robinwoodapp {
+
+  #app {
+    height: 100%;
+  }
+
+  #app-settings-content {
+    display: block;
+    max-height: 100%;
+
+    p {
+      margin-bottom: 0.6rem;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    input[type='file'] {
+      width: 93%;
+    }
+    input[type='range'] {
+      width: 100%;
+    }
+  }
+
+  #app-content-images {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+
+
+  #overviewPart {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    overflow-x: scroll;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+
+    .flexBox {
+      box-shadow: 0 0 3px #adadad;
+      flex-basis: auto;
+      flex-shrink: 0;
+      margin: 10px;
+
+      &.active,
+      &:hover {
+        box-shadow: 0px 0px 8px 0px #999;
+      }
+
+      .imageBox {
+        .card-up {
+          height: 150px;
+        }
+
+        .card-down {
+          height: 40px;
+
+          span {
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  #detailPart {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 0px;
+    margin-bottom: 0;
+    padding: 20px;
+
+    .imageBox {
+      box-shadow: 0px 0px 7px 0px #adadad;
+
+      .finalImage {
+        max-height: 500px;
+        max-height: calc(100vh - 375px);
+      }
+    }
+  }
+}
+
+.imageBox {
+  background-color: #f5f5f5;
+  width: 100%;
+
+  .card-up {
+    background-color: white;
+  }
+
+  .card-down {
+    height: 50px;
+    padding: 5px;
+
+    span {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    button {
+      float: right;
+    }
+  }
+}
+
+  .finalImage {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
