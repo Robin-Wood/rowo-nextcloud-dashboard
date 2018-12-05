@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>robinwoodapp</id>
-    <name>ROBIN WOOD-App</name>
-    <summary>alles mögliche</summary>
+    <id>robinwooddashboard</id>
+    <name>ROBIN WOOD-Dashboard</name>
+    <summary>Dashboard für die Aktivenplattform</summary>
     <description><![CDATA[alles mögliche]]></description>
     <version>0.1</version>
     <licence>agpl</licence>
     <author mail="it@robinwood.de" >Tim Christensen</author>
-    <namespace>RobinWoodApp</namespace>
+    <namespace>RobinWoodDashboard</namespace>
     <category>tools</category>
     <bugs>https://aktiv.robinwood.de</bugs>
     <dependencies>
@@ -16,8 +16,8 @@
     </dependencies>
     <navigations>
       <navigation>
-        <name>Bild-Generator</name>
-        <route>robinwoodapp.page.index</route>
+        <name>Bild-Generator 2</name>
+        <route>robinwooddashboard.page.index</route>
       </navigation>
     </navigations>
 </info>
