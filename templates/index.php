@@ -1,7 +1,7 @@
 <?php
-script('robinwoodapp', 'FileSaver');
-script('robinwoodapp', 'script');
-style('robinwoodapp', 'style');
+script('robinwooddashboard', 'FileSaver');
+script('robinwooddashboard', 'script');
+style('robinwooddashboard', 'style');
 ?>
 
 <div id="app">

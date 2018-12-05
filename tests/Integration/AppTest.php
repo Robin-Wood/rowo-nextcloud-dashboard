@@ -1,6 +1,6 @@
 <?php
 
-namespace OCA\RobinWoodApp\Tests\Integration\Controller;
+namespace OCA\RobinWoodDashboard\Tests\Integration\Controller;
 
 use OCP\AppFramework\App;
 use Test\TestCase;
@@ -17,7 +17,7 @@ class AppTest extends TestCase {
 
     public function setUp() {
         parent::setUp();
-        $app = new App('robinwoodapp');
+        $app = new App('robinwooddashboard');
         $this->container = $app->getContainer();
     }
 

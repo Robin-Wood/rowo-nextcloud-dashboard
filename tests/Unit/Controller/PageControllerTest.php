@@ -1,12 +1,12 @@
 <?php
 
-namespace OCA\RobinWoodApp\Tests\Unit\Controller;
+namespace OCA\RobinWoodDashboard\Tests\Unit\Controller;
 
 use PHPUnit_Framework_TestCase;
 
 use OCP\AppFramework\Http\TemplateResponse;
 
-use OCA\RobinWoodApp\Controller\PageController;
+use OCA\RobinWoodDashboard\Controller\PageController;
 
 
 class PageControllerTest extends PHPUnit_Framework_TestCase {
@@ -17,7 +17,7 @@ class PageControllerTest extends PHPUnit_Framework_TestCase {
 		$request = $this->getMockBuilder('OCP\IRequest')->getMock();
 
 		$this->controller = new PageController(
-			'robinwoodapp', $request, $this->userId
+			'robinwooddashboard', $request, $this->userId
 		);
 	}
 

@@ -1,5 +1,5 @@
 <?php
-namespace OCA\RobinWoodApp\Controller;
+namespace OCA\RobinWoodDashboard\Controller;
 
 use OCP\IRequest;
 use OCP\AppFramework\Http\TemplateResponse;
@@ -25,7 +25,7 @@ class PageController extends Controller {
 	 * @NoCSRFRequired
 	 */
 	public function index() {
-		return new TemplateResponse('robinwoodapp', 'index');  // templates/index.php
+		return new TemplateResponse('robinwooddashboard', 'index');  // templates/index.php
 	}
 
 }
