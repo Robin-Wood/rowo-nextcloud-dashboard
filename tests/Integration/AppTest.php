@@ -23,7 +23,7 @@ class AppTest extends TestCase {
 
     public function testAppInstalled() {
         $appManager = $this->container->query('OCP\App\IAppManager');
-        $this->assertTrue($appManager->isInstalled('robinwoodapp'));
+        $this->assertTrue($appManager->isInstalled('robinwooddashboard'));
     }
 
 }
