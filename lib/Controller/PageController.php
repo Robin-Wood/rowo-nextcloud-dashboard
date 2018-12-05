@@ -5,13 +5,15 @@ use OCP\IRequest;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\Controller;
-use OCA\GroupFolders\Folder;
+use OCA\GroupFolders\Folder\FolderManager;
 
 class PageController extends Controller {
 	private $userId;
-	public function __construct($AppName, IRequest $request, $UserId){
+	private $manager;
+	public function __construct($AppName, IRequest $request, FolderManager $manager,$UserId){
 		parent::__construct($AppName, $request);
 		$this->userId = $UserId;
+		$this->manager = $manager;
 	}
 
 	/**
