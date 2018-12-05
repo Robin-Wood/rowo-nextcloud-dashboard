@@ -27,7 +27,7 @@ class PageController extends Controller {
 	 * @NoCSRFRequired
 	 */
 	public function index() {
-        $folders = $this->manager->getFoldersForUser($this->getUser());
+        $folders = $this->manager->getFoldersForUser($this->userId);
 		return new TemplateResponse('robinwooddashboard', 'index');  // templates/index.php
 	}
 
